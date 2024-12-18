@@ -27,8 +27,20 @@ Q2-> Write a program to convet uppercase character to
    ii) lower()  ex-: a = "LALIT"  a.upper()   # lalit
    iii) swapcase ex-: a= "laLiT" a.swapcase()  # LAlIt
    
-2) 
+2) using for loop with ord() & chr()
+
+a  = input("Enter a string : ")
+new = str()
+for i in a :
+    if(ord(i)>=65 and ord(i)<=90):
+        new=new+chr( ord(i)+32) 
+    elif(ord(i)>=97 and ord(i)<=122): 
+        new=new+chr( ord(i)-32) 
+    else:
+        new = new+i 
+        
+print(new)
+
+
+
 """
-a="lalit"
-print(a.upper())
-print(a.lower())
